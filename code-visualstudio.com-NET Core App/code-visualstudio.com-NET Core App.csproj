@@ -1,9 +1,156 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    
     <RootNamespace>code_visualstudio.com_NET_Core_App</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.9.0" />
+    <PackageReference Include="FsCheck.Nunit" Version="2.14.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.12.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.DependencyCollector" Version="2.12.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.PerfCounterCollector" Version="2.12.0" />
+    <PackageReference Include="Microsoft.Azure.Amqp" Version="2.4.3" />
+    <PackageReference Include="Microsoft.Azure.Common.Dependencies" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Azure.DocumentDB" Version="2.9.2" />
+    <PackageReference Include="Microsoft.Azure.EventHubs" Version="4.1.0" />
+    <PackageReference Include="Microsoft.Azure.KeyVault" Version="3.0.4" />
+    <PackageReference Include="Microsoft.Azure.KeyVault.Core" Version="3.0.4" />
+    <PackageReference Include="Microsoft.Azure.Management.Fluent" Version="1.29.1" />
+    <PackageReference Include="Microsoft.Azure.Management.ResourceManager.Fluent" Version="1.29.1" />
+    <PackageReference Include="Microsoft.Azure.NotificationHubs" Version="3.3.0" />
+    <PackageReference Include="Microsoft.Azure.Search" Version="10.1.0" />
+    <PackageReference Include="Microsoft.Azure.Search.Service" Version="10.1.0" />
+    <PackageReference Include="Microsoft.Azure.ServiceBus.EventProcessorHost" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Azure.Storage.Blob" Version="11.1.1" />
+    <PackageReference Include="Microsoft.Azure.WebJobs" Version="3.0.14" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Core" Version="3.0.14" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.ServiceBus" Version="2.3.0" />
+    <PackageReference Include="Microsoft.CodeCoverage" Version="16.4.0" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.AzureKeyVault" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Net.Compilers.netcore" Version="1.3.2" />
+    <PackageReference Include="Microsoft.NetCore.Analyzers" Version="2.9.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.DotNetAppHost" Version="3.1.0" />
+    <PackageReference Include="Microsoft.NETCore.DotNetHost" Version="3.1.0" />
+    <PackageReference Include="Microsoft.NETCore.DotNetHostPolicy" Version="3.1.0" />
+    <PackageReference Include="Microsoft.NETCore.DotNetHostResolver" Version="3.1.0" />
+    <PackageReference Include="Microsoft.NETCore.Jit" Version="2.0.8" />
+    <PackageReference Include="Microsoft.NETCore.Platforms" Version="3.1.0" />
+    <PackageReference Include="Microsoft.NETCore.Portable.Compatibility" Version="1.0.2" />
+    <PackageReference Include="Microsoft.NETCore.Runtime" Version="1.0.1" />
+    <PackageReference Include="Microsoft.NETCore.Runtime.CoreCLR" Version="2.0.8" />
+    <PackageReference Include="Microsoft.NETCore.Runtime.Native" Version="1.0.1" />
+    <PackageReference Include="Microsoft.NETCore.Targets" Version="3.1.0" />
+    <PackageReference Include="Microsoft.NETCore.Targets.DNXCore" Version="4.9.0" />
+    <PackageReference Include="Microsoft.NETCore.Targets.NETFramework" Version="4.6.0" />
+    <PackageReference Include="Microsoft.NETCore.Targets.UniversalWindowsPlatform" Version="5.0.0" />
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.9" />
+    <PackageReference Include="Microsoft.NETCore.Windows.ApiSets" Version="1.0.1" />
+    <PackageReference Include="Microsoft.NETCore.Windows.ApiSets-x64" Version="1.0.0" />
+    <PackageReference Include="Microsoft.NETCore.Windows.ApiSets-x86" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Rest.ClientRuntime.Azure" Version="3.3.19" />
+    <PackageReference Include="Microsoft.Rest.ClientRuntime.Azure.Authentication" Version="2.4.0" />
+    <PackageReference Include="Microsoft.ServiceFabric" Version="7.0.457" />
+    <PackageReference Include="Microsoft.ServiceFabric.Services" Version="4.0.457" />
+    <PackageReference Include="Microsoft.TeamFoundation.DistributedTask.Common.Contracts" Version="16.153.0" />
+    <PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="16.153.0" />
+    <PackageReference Include="Microsoft.TestPlatform.ObjectModel" Version="16.4.0" />
+    <PackageReference Include="Microsoft.TestPlatform.TestHost" Version="16.4.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Fabric.MSBuild" Version="1.6.9" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Kubernetes.Tools.Targets" Version="1.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Composition" Version="16.4.11" />
+    <PackageReference Include="Microsoft.VisualStudio.CoreUtility" Version="16.4.280" />
+    <PackageReference Include="Microsoft.VisualStudio.OLE.Interop" Version="7.10.6071" />
+    <PackageReference Include="Microsoft.VisualStudio.Services.Client" Version="16.153.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Services.ExtensionManagement.WebApi" Version="16.153.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Services.Gallery.WebApi" Version="16.153.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Services.InteractiveClient" Version="16.153.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Services.Notifications.WebApi" Version="16.153.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Services.Release.Client" Version="16.153.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Services.Search.Client" Version="16.153.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Services.ServiceEndpoints.WebApi" Version="16.153.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Shell.Framework" Version="16.4.29519.181" />
+    <PackageReference Include="Microsoft.VisualStudio.Shell.Interop" Version="7.10.6072" />
+    <PackageReference Include="Microsoft.VisualStudio.SlowCheetah" Version="3.2.26">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Text.Data" Version="16.4.280" />
+    <PackageReference Include="Microsoft.VisualStudio.TextManager.Interop" Version="7.10.6071" />
+    <PackageReference Include="Microsoft.VisualStudio.Threading" Version="16.4.43" />
+    <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers" Version="16.4.43" />
+    <PackageReference Include="Microsoft.VisualStudio.Utilities" Version="16.4.29519.181" />
+    <PackageReference Include="Microsoft.VisualStudio.Utilities.Internal" Version="14.1.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Validation" Version="15.5.31" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink.Loader" Version="14.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Contracts" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Web.WebJobs.Publish" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Win32.Registry" Version="4.7.0" />
+    <PackageReference Include="Microsoft.WindowsAzure.ConfigurationManager" Version="3.2.3" />
+    <PackageReference Include="MSBuild.Microsoft.VisualStudio.Web.targets" Version="14.0.0.3" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit.Console" Version="3.10.0" />
+    <PackageReference Include="NUnit.ConsoleRunner" Version="3.10.0" />
+    <PackageReference Include="NUnit.Extension.NUnitProjectLoader" Version="3.6.0" />
+    <PackageReference Include="NUnit.Extension.NUnitV2Driver" Version="3.8.0" />
+    <PackageReference Include="NUnit.Extension.NUnitV2ResultWriter" Version="3.6.0" />
+    <PackageReference Include="NUnit.Extension.TeamCityEventListener" Version="1.0.7" />
+    <PackageReference Include="NUnit.Extension.VSProjectLoader" Version="3.8.0" />
+    <PackageReference Include="NUnit.Runners" Version="3.10.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
+    <PackageReference Include="runtime.aot.System.Runtime.Handles" Version="4.0.1" />
+    <PackageReference Include="runtime.linux-x64.Microsoft.NETCore.App" Version="2.2.8" />
+    <PackageReference Include="runtime.linux-x64.Microsoft.NETCore.DotNetAppHost" Version="3.1.0" />
+    <PackageReference Include="runtime.linux-x64.Microsoft.NETCore.DotNetHostPolicy" Version="3.1.0" />
+    <PackageReference Include="runtime.linux-x64.Microsoft.NETCore.DotNetHostResolver" Version="3.1.0" />
+    <PackageReference Include="runtime.ubuntu.14.04-x64.Microsoft.NETCore.Jit" Version="1.1.13" />
+    <PackageReference Include="runtime.win-x64.Microsoft.NETCore.DotNetAppHost" Version="3.1.0" />
+    <PackageReference Include="runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy" Version="3.1.0" />
+    <PackageReference Include="runtime.win-x64.Microsoft.NETCore.DotNetHostResolver" Version="3.1.0" />
+    <PackageReference Include="runtime.win-x86.Microsoft.NETCore.DotNetHostResolver" Version="3.1.0" />
+    <PackageReference Include="runtime.win.Microsoft.Win32.Primitives" Version="4.0.1" />
+    <PackageReference Include="runtime.win7-x64.Microsoft.NETCore.Jit" Version="1.0.3" />
+    <PackageReference Include="runtime.win7-x64.Microsoft.NETCore.Runtime.CoreCLR" Version="1.1.13" />
+    <PackageReference Include="runtime.win7-x86.Microsoft.NETCore.Jit" Version="1.0.3" />
+    <PackageReference Include="runtime.win7-x86.Microsoft.NETCore.Runtime.CoreCLR" Version="1.0.2" />
+    <PackageReference Include="runtime.win8-arm.Microsoft.NETCore.Runtime.CoreCLR" Version="1.0.2" />
+    <PackageReference Include="Serenity.Core" Version="3.9.13" />
+    <PackageReference Include="WindowsAzure.ServiceBus" Version="6.0.0" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.abstractions" Version="2.0.3" />
+    <PackageReference Include="xunit.analyzers" Version="0.10.0" />
+    <PackageReference Include="xunit.assert" Version="2.4.1" />
+    <PackageReference Include="xunit.core" Version="2.4.1" />
+    <PackageReference Include="xunit.extensibility.core" Version="2.4.1" />
+    <PackageReference Include="xunit.extensibility.execution" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.console" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="xunit.runner.reporters" Version="2.4.1" />
+    <PackageReference Include="XunitXml.TestLogger" Version="2.1.26" />
+  </ItemGroup>
 
 </Project>

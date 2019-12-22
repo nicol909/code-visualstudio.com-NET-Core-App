@@ -9,8 +9,14 @@ namespace code_visualstudio.com_NET_Core_App
 
         static void Main(string[] args)
         {
-            Console.WriteLine(Value);
-            Console.ReadLine();
-                }
+            Program.WriteLine(Value);
+            string v = Console.ReadLine();
+            string Value = v;
+        }
+
+        private static void WriteLine(string value)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
