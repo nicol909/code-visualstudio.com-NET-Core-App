@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "code-visualstudio.com-NET Core App", "code-visualstudio.com-NET Core App\code-visualstudio.com-NET Core App.csproj", "{9D790CB0-7AB2-4B2A-8DB8-A0B8EE1337B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "code-visualstudio.com-ASP.NET Core WebApp", "code-visualstudio.com-NET Core App\code-visualstudio.com-ASP.NET Core WebApp.csproj", "{9D790CB0-7AB2-4B2A-8DB8-A0B8EE1337B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6706CD5E-D2F7-4C6C-BFE1-5766A1CF3045}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
