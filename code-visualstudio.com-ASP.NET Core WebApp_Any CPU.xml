@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<iasettings>
+  <projectproperties>
+    <manufacturer>Administrateur</manufacturer>
+    <productname>code-visualstudio.com-ASP.NET Core WebApp</productname>
+    <productversion>1.0.0.0</productversion>
+    <productcode>{5da138a8-7e6a-49d4-8707-0c67fede6602}</productcode>
+    <upgradecode>{5712899d-db34-4230-b112-50ab2cf9d755}</upgradecode>
+    <language>0</language>
+    <languagename>English</languagename>
+  </projectproperties>
+  <summary>
+    <title>code-visualstudio.com-ASP.NET Core WebApp</title>
+    <subject>code-visualstudio.com-ASP.NET Core WebApp</subject>
+    <author>Administrateur</author>
+    <summarycomments>code-visualstudio.com-ASP.NET Core WebApp</summarycomments>
+    <revisioncode>{507c4c2f-ff63-4574-a45c-f4553aa439ad}</revisioncode>
+    <uacelevation>highestAvailable</uacelevation>
+  </summary>
+  <addremove>
+    <publishername>Administrateur</publishername>
+    <contactname>Administrateur</contactname>
+    <helplink>http://www.mywebsite.com</helplink>
+    <productupdatelink>http://www.mywebsite.com</productupdatelink>
+    <addremovecomments>All Rights Reserved</addremovecomments>
+    <iconfile />
+  </addremove>
+  <codegen>
+    <generateincludefiles>0</generateincludefiles>
+    <generatefeatures>1</generatefeatures>
+    <refreshscript>0</refreshscript>
+  </codegen>
+  <compilervariables>
+    <variables />
+  </compilervariables>
+  <build>
+    <buildtype>0</buildtype>
+    <buildasmsi>False</buildasmsi>
+    <cachesources>1</cachesources>
+  </build>
+  <targetfolders />
+  <files>
+    <filedetails filename="C:\Users\Administrateur\source\repos\code-visualstudio.com-NET Core App\code-visualstudio.com-NET Core App\bin\Debug\netcoreapp2.2\code-visualstudio.com-ASP.NET Core WebApp.dll" targetlocation="$TARGETDIR$" type="2" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="1" />
+  </files>
+  <dependencies />
+  <registry />
+  <dialogtheme>
+    <themename>Official</themename>
+  </dialogtheme>
+  <authenticode>
+    <sign>0</sign>
+    <mode>0</mode>
+    <certificatefile />
+    <keyfile />
+    <pfxfile />
+    <productinfourl />
+    <authpassword />
+    <timestampurl />
+    <signall>0</signall>
+  </authenticode>
+  <compression>
+    <compressiontype>8</compressiontype>
+    <encrypt>0</encrypt>
+    <compressionpassword />
+  </compression>
+  <output>
+    <outputtype>0</outputtype>
+    <location />
+    <filename />
+    <calculatefilehash>0</calculatefilehash>
+    <refreshrevisioncode>1</refreshrevisioncode>
+  </output>
+</iasettings>
