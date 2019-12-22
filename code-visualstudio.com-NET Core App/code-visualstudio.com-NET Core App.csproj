@@ -11,6 +11,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageConflictPlatformManifests Remove="Microsoft.NETCore.App.PlatformManifest.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="5.9.0" />
     <PackageReference Include="FsCheck.Nunit" Version="2.14.0" />
     <PackageReference Include="Microsoft.ApplicationInsights" Version="2.12.0" />
