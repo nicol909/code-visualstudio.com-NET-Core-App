@@ -6,8 +6,7 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    
-    <RootNamespace>code_visualstudio.com_NET_Core_App</RootNamespace>
+        <RootNamespace>code_visualstudio.com_NET_Core_App</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
